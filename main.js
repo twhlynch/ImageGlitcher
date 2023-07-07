@@ -44,7 +44,7 @@ glitch_element.addEventListener("click", function (e) {
             byteArray[index] = Math.floor(Math.random() * 255);
         }
         const blob = new Blob([byteArray], { type: "image/png" });
-        const url = URL.createObjectURL(blob);          
+        const url = URL.createObjectURL(blob);
         var link = document.createElement("a");
         link.download = "image.png";
         link.href = url;
