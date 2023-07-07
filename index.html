@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Image Glitcher | .index | twhlynch</title>
+        <meta name="description" content="Image Glitcher">
+        <meta name="author" content="twhlynch">
+        <meta property="og:title" content="Image Glitcher | .index | twhlynch">
+        <meta property="og:description" content="Image Glitcher">
+        <meta property="og:site_name" content="Image Glitcher | .index | twhlynch">
+        <meta property="og:locale" content="en_us">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://twhlynch.me/ImageGlitcher">
+        <meta property="og:image" content="http://twhlynch.me/ImageGlitcher/favicon.gif">
+        <link rel="icon" href="favicon.gif" type="image/gif">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDS57RBQ3Q"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BDS57RBQ3Q');
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/protobufjs@7.X.X/dist/protobuf.js"></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <a href="https://twhlynch.me">My Website</a>
+        </nav>
+        <main>
+            <h2>Image Glitcher</h2>
+            <div id="inputs"><input type="number" name="intensity" id="intensity" placeholder="Intensity: 1" min="1">
+                <button id="choose-file">Choose File</button>
+                <input type="file" name="file" id="file" accept="image/*">
+            </div>
+            <div id="outs">
+                <canvas id="image"></canvas>
+            </div>
+            <div id="buttons">
+                <button id="glitch">Glitch</button>
+            </div>
+        </main>
+        <footer>
+            <p>Website built by <a href="https://twhlynch.me">.index</a> / <a href="https://github.com/twhlynch">twhlynch</a></p>
+        </footer>
+    </body>
+</html>
